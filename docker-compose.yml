@@ -1,0 +1,18 @@
+services:
+  api:
+    build: .
+    image: document-ai-backend:1.0.0
+    ports:
+      - "8000:8000"
+    environment:
+      LOG_LEVEL: INFO
+      OCR_ENGINE: tesseract
+      MAX_UPLOAD_SIZE_MB: "10"
+      DATE_ORDER: DMY
+    volumes:
+      # SQLite database and face thumbnails survive container restarts and rebuilds.
+      - docai-storage:/app/storage
+    restart: unless-stopped
+
+volumes:
+  docai-storage:

@@ -1,0 +1,4 @@
+# Everything needed to run the test suite.
+-r requirements.txt
+pytest>=7.4
+httpx>=0.24

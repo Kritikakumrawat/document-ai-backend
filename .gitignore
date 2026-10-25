@@ -1,0 +1,44 @@
+# --- Python ---------------------------------------------------------------
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+
+# --- Virtual environments and local tools ----------------------------------
+.venv/
+.venv-*/
+venv/
+env/
+.tools/
+
+# --- Secrets and local configuration ---------------------------------------
+.env
+.env.*
+!.env.example
+
+# --- Runtime data: may contain personal information, never commit -----------
+storage/*
+!storage/.gitkeep
+!storage/thumbnails/
+storage/thumbnails/*
+!storage/thumbnails/.gitkeep
+*.db
+*.sqlite
+*.sqlite3
+
+# --- Images: only the clearly marked synthetic example is tracked ------------
+sample_data/*
+!sample_data/README.md
+!sample_data/synthetic_license_example.jpg
+
+# --- Editors and OS ----------------------------------------------------------
+.vscode/
+.idea/
+.claude/
+*.swp
+.DS_Store
+Thumbs.db

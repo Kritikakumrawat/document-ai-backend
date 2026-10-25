@@ -1,0 +1,12 @@
+# Runtime dependencies. Works on Python 3.9+; pip picks versions that match your Python.
+# The exact versions used for verification (Python 3.11) are pinned in requirements-lock.txt.
+fastapi>=0.110,<1.0
+uvicorn>=0.27,<1.0
+python-multipart>=0.0.9
+pydantic>=2.6,<3.0
+pydantic-settings>=2.2,<3.0
+# OpenCV 5 no longer bundles the Haar face cascade used for face thumbnails, so stay on 4.x.
+opencv-python-headless>=4.8,<5.0
+numpy>=1.24
+pillow>=10.1
+pytesseract>=0.3.10

@@ -1,0 +1,4 @@
+# Optional: EasyOCR engine (set OCR_ENGINE=easyocr). Installs PyTorch (CPU), a large download.
+# EasyOCR downloads its model weights (~100 MB) from the internet the first time it runs.
+-r requirements.txt
+easyocr>=1.7
